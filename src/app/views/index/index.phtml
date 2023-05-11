@@ -1,0 +1,27 @@
+<?php echo $this->tag->form("display"); ?>
+    <p>
+        <label for="name">Search: </label>
+        <input class="form-control" type="text" name="search">
+    </p>
+    <p>
+        <label for="album" class="mx-4">Album :
+            <input type="checkbox" name="album" value="albums">
+        </label>
+        <label for="artist" class="mx-4">Artist :
+            <input type="checkbox" name="artist" value="artists">
+        </label>
+        <label for="playlist" class="mx-4">Playlist :
+            <input type="checkbox" name="playlist" value="playlists">
+        </label>
+        <label for="track" class="mx-4">Track :
+            <input type="checkbox" name="track" value="tracks">
+        </label>
+        <label for="show" class="mx-4">Show :
+            <input type="checkbox" name="show" value="shows">
+        </label>
+        <label for="episode" class="mx-4">Episode :
+            <input type="checkbox" name="episode" value="episodes">
+        </label>
+    </p>
+    <?php echo $this->tag->submitButton(["Submit",'class'=>'col-3 btn btn-primary']); ?>
+</form>
